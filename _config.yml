@@ -1,2 +1,48 @@
-title: Dolarge
-description: Bookmark this to keep an eye on my project updates!
+title: 인프라 지식 공유 블로그 # 블로그의 이름
+description: 클라우드, 네트워크, 시스템, DevOps 등에 대한 실전 인프라 경험과 지식 정리
+theme: "just-the-docs" # 사용 테마
+url: "https://dolarge.github.io"
+repository: "Dolarge/dolarge.github.io"
+
+logo: "/assets/images/infrastructure-logo.png" # 맞춤형 로고 경로 (이미지가 있을 경우)
+
+color_scheme: "dark" # 다크모드(선택, 기본은 밝은 테마)
+search_enabled: true # 내부 검색 기능 사용
+heading_anchors: true # h1~h6 제목 링크 자동 생성
+
+footer_content: "© 2025 Dolarge. 모든 글은 자유롭게 공유 및 활용 가능합니다."
+
+# 구글 애널리틱스 연동(선택)
+# ga_tracking: "UA-XXXXXXXXX-X"
+
+aux_links: # 우측 상단에 외부 링크 노출
+  "깃허브 프로젝트":
+    - "//github.com/Dolarge"
+  "인프라 관련 오픈소스":
+    - "//github.com/topics/infrastructure"
+
+# 문서 카테고리(컬렉션) 추가로 다양한 인프라 분야 분류 가능
+collections:
+  cloud:
+    output: true
+    permalink: "/cloud/:path/"
+  devops:
+    output: true
+    permalink: "/devops/:path/"
+  network:
+    output: true
+    permalink: "/network/:path/"
+
+just_the_docs:
+  collections:
+    cloud:
+      name: 클라우드
+    devops:
+      name: 데브옵스
+    network:
+      name: 네트워크
+
+# 한국어 포스트를 위한 기본 마크다운 설정
+markdown: kramdown
+language: "ko"
+
